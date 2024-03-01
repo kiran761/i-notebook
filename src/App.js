@@ -10,10 +10,12 @@ function App() {
       <NoteState>
         <HashRouter>
           <Navbar />
-          <Routes>
-            < Route exact path="/Home" element={<Home />} />
-            < Route exact path="/About" element={<About />} />
-          </Routes>
+          <div className="container">
+            <Routes>
+              < Route exact path="/Home" element={<Home />} />
+              < Route exact path="/About" element={<About />} />
+            </Routes>
+          </div>
         </HashRouter>
       </NoteState>
 
